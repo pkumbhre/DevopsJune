@@ -7,6 +7,14 @@ pipeline                        //Jenkinsfile always starts with keyword pipelin
         {steps                                      //ot tells jenkins what do
          {sh 'echo hi_henkins'}                    //sh: execute the shell script/command
          }
+        stage ('Build')                     //name of stage
+        {steps                                      //ot tells jenkins what do
+         {sh 'echo hi_building'}                    //sh: execute the shell script/command
+         }
+        stage ('Test')                     //name of stage
+        {steps                                      //ot tells jenkins what do
+         {sh 'echo hi_Testing'}                    //sh: execute the shell script/command
+         }
 
     }
 
